@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Prediction</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <div class="page-header">
+
+        <span class="badge">
+            MACHINE LEARNING
+        </span>
+
+        <h1>
+            Student Performance Prediction
+        </h1>
+
+        <p>
+            Enter student information to generate
+            an AI-based performance prediction.
+        </p>
+
+    </div>
+
+
+    <div class="prediction-layout">
+
+
+        <!-- FORM -->
+
+        <div class="card">
+
+            <h2>
+                Student Information
+            </h2>
+
+
+            <form id="prediction-form">
+
+
+                <label>
+
+                    Study Hours
+
+                    <span class="input-hint">
+                        0–24 hours
+                    </span>
+
+                    <input
+                        type="number"
+                        id="study_hours"
+                        name="study_hours"
+                        min="0"
+                        max="24"
+                        step="0.5"
+                        placeholder="Example: 6"
+                        required
+                    >
+
+                </label>
+
+                <label>
+
+                    Attendance
+
+                    <span class="input-hint">
+                        0–100%
+                     </span>
+
+                    <input
+                        type="number"
+                        id="attendance"
+                        name="attendance"
+                        min="0"
+                        max="100"
+                        step="1"
+                        placeholder="Example: 85"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Previous Score
+
+                    <span class="input-hint">
+                        0–100
+                    </span>
+
+                    <input
+                        type="number"
+                        id="previous_score"
+                        name="previous_score"
+                        min="0"
+                        max="100"
+                        step="1"
+                        placeholder="Example: 72"
+                        required
+                    >
+
+                </label>
+
+                <label>
+
+                    Assignments Completed
+
+                    <span class="input-hint">
+                        0–100
+                    </span>
+
+                    <input
+                        type="number"
+                        id="assignments_completed"
+                        name="assignments_completed"
+                        min="0"
+                        max="100"
+                        step="1"
+                        placeholder="Example: 80"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Sleep Hours
+
+                    <span class="input-hint">
+                        0–24 hours
+                    </span>
+
+                    <input
+                        type="number"
+                        id="sleep_hours"
+                        name="sleep_hours"
+                        min="0"
+                        max="24"
+                        step="0.5"
+                        placeholder="Example: 7"
+                        required
+                    >
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    id="prediction-button"
+                    class="primary-action"
+                >
+                    Generate Prediction
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+        <!-- RESULT -->
+
+        <div class="card result-panel">
+
+            <h2>
+                Prediction Result
+            </h2>
+
+
+            <div
+                id="prediction-score"
+                class="big-score"
+            >
+                --
+            </div>
+
+
+            <div
+                id="prediction-category"
+                class="category"
+            >
+                Waiting for prediction
+            </div>
+
+
+            <div
+                id="recommendations"
+                style="width:100%;"
+            >
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="../js/prediction.js"></script>
+<script src="../js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>What-If Simulator</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <div class="page-header">
+
+        <span class="badge">
+            EXPERIMENTAL AI
+        </span>
+
+        <h1>
+            What-If Simulator
+        </h1>
+
+        <p>
+            Change student variables and see how
+            the prediction changes.
+        </p>
+
+    </div>
+
+
+    <div class="prediction-layout">
+
+
+        <div class="card">
+
+            <h2>
+                🔬 Simulation Inputs
+            </h2>
+
+
+            <label>
+                Study Hours
+
+                <input
+                    type="number"
+                    id="study_hours"
+                    value="6"
+                    min="0"
+                    max="24"
+                    step="0.1"
+                >
+            </label>
+
+
+            <label>
+                Attendance
+
+                <input
+                    type="number"
+                    id="attendance"
+                    value="85"
+                    min="0"
+                    max="100"
+                >
+            </label>
+
+
+            <label>
+                Previous Score
+
+                <input
+                    type="number"
+                    id="previous_score"
+                    value="70"
+                    min="0"
+                    max="100"
+                >
+            </label>
+
+
+            <label>
+                Assignments Completed
+
+                <input
+                    type="number"
+                    id="assignments_completed"
+                    value="8"
+                    min="0"
+                    max="100"
+                >
+            </label>
+
+
+            <label>
+                Sleep Hours
+
+                <input
+                    type="number"
+                    id="sleep_hours"
+                    value="7"
+                    min="0"
+                    max="24"
+                >
+            </label>
+
+
+            <button
+                class="primary-action"
+                onclick="runSimulation()"
+            >
+                🚀 Run Simulation
+            </button>
+
+        </div>
+
+
+        <div class="card result-panel">
+
+            <h2>
+                Simulation Result
+            </h2>
+
+
+            <div
+                id="simulation-score"
+                class="big-score"
+            >
+                --
+            </div>
+
+
+            <div
+                id="simulation-category"
+                class="category"
+            >
+                Waiting...
+            </div>
+
+
+            <p id="simulation-message">
+                Change the inputs and run the simulation.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script src="../js/simulator.js"></script>
+<script src="../js/theme.js"></script>
+</body>
+
+</html>

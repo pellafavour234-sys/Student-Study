@@ -1,0 +1,44 @@
+@media (max-width: 800px) {
+
+    .sidebar {
+        position: fixed;
+
+        left: -260px;
+
+        top: 0;
+        bottom: 0;
+
+        z-index: 1000;
+
+        transition: 0.3s;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .content-frame {
+        height: calc(100vh - 70px);
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .topbar strong {
+        font-size: 12px;
+    }
+
+    .api-status {
+        display: none;
+    }
+
+}

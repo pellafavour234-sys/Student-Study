@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentAI — Academic Intelligence</title>
+
+    <link
+        rel="stylesheet"
+        href="css/main.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/responsive.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                🤖
+            </div>
+
+            <div>
+
+                <strong>
+                    StudentAI
+                </strong>
+
+                <small>
+                    Academic Intelligence
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a
+                href="pages/dashboard.html"
+                target="content-frame"
+            >
+                🏠 Dashboard
+            </a>
+
+            <a
+                href="pages/predict.html"
+                target="content-frame"
+            >
+                🎯 Predict
+            </a>
+
+            <a
+                href="pages/insights.html"
+                target="content-frame"
+            >
+                🧠 AI Insights
+            </a>
+
+            <a
+                href="pages/simulator.html"
+                target="content-frame"
+            >
+                🔬 What-If Simulator
+            </a>
+
+            <a
+                href="pages/analytics.html"
+                target="content-frame"
+            >
+                📊 Analytics
+            </a>
+
+            <a
+                href="pages/model.html"
+                target="content-frame"
+            >
+                🧪 Model Lab
+            </a>
+
+            <a
+                href="pages/history.html"
+                target="content-frame"
+            >
+                📜 History
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <button id="theme-button">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+    </aside>
+
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+   
+    <!-- MAIN -->
+
+    <main class="main">
+
+
+        <header class="topbar">
+
+            <button
+                id="menu-button"
+                class="menu-button"
+            >
+                ☰
+            </button>
+
+
+            <div>
+
+                <strong>
+                    Student Performance Intelligence
+                </strong>
+
+            </div>
+
+
+            <div
+                id="api-status"
+                class="api-status"
+            >
+                🟡 Checking API
+            </div>
+
+        </header>
+
+
+        <iframe
+            name="content-frame"
+            src="pages/dashboard.html"
+            class="content-frame">
+        </iframe>
+
+
+    </main>
+
+</div>
+
+
+<!-- FLOATING AI BUTTON -->
+
+<button
+    class="ai-floating"
+    title="Open AI Prediction"
+    onclick="
+        document.querySelector('.content-frame').src =
+        'pages/predict.html';
+    "
+>
+    ✨
+</button>
+
+
+<script src="js/api.js"></script>
+
+</body>
+
+</html>

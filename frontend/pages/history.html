@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Prediction History</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <div class="page-header">
+
+        <span class="badge">
+            PREDICTION DATABASE
+        </span>
+
+        <h1>
+            Prediction History
+        </h1>
+
+        <p>
+            Review previous StudentAI predictions.
+        </p>
+
+    </div>
+
+
+    <div class="card">
+
+        <div
+            style="
+                overflow-x:auto;
+            "
+        >
+
+            <table class="data-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Study
+                        </th>
+
+                        <th>
+                            Attendance
+                        </th>
+
+                        <th>
+                            Previous
+                        </th>
+
+                        <th>
+                            Predicted
+                        </th>
+
+                        <th>
+                            Performance
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="history-body">
+
+                    <tr>
+
+                        <td colspan="6">
+                            Loading...
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="../js/history.js"></script>
+<script src="../js/theme.js"></script>
+</body>
+
+</html>

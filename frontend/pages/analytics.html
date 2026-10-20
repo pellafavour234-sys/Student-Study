@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Analytics</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/main.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="page">
+
+
+    <div class="page-header">
+
+        <span class="badge">
+            PERFORMANCE ANALYTICS
+        </span>
+
+        <h1>
+            Analytics Center
+        </h1>
+
+        <p>
+            Explore statistics generated from
+            prediction history.
+        </p>
+
+    </div>
+
+
+    <div class="stats">
+
+
+        <div class="stat-card">
+
+            <span>
+                Predictions
+            </span>
+
+            <strong id="total">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Average
+            </span>
+
+            <strong id="average">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Highest
+            </span>
+
+            <strong id="highest">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span>
+                Lowest
+            </span>
+
+            <strong id="lowest">
+                --
+            </strong>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="card">
+
+        <h2>
+            📊 Performance Overview
+        </h2>
+
+        <p>
+            The analytics section summarizes the
+            predictions stored by StudentAI.
+        </p>
+
+        <br>
+
+        <div>
+            Average predicted score
+        </div>
+
+        <br>
+
+        <div class="progress">
+
+            <div
+                id="average-bar"
+                class="progress-bar"
+                style="width:0%"
+            >
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script src="../js/analytics.js"></script>
+<script src="../js/theme.js"></script>
+</body>
+
+</html>
